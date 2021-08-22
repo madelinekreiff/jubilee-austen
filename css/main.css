@@ -1,50 +1,73 @@
-/***** BASE STYLES *****/
-
+/* ---------- General Styles ---------- */
+html {
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
 body {
     color: #2b2b2b;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    height: 100%;
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+figure {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+.content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 20px;
+    width: 90%;
 }
 
- /***** GRID *****/
-
-.full-width {
-    margin: 0 auto;
-    overflow: auto;
-    width: 1200px;
-}
-.half-width {
-    float: left;
-    width: 600px;
-}
-.third-width {
-    float: left;
-    width: 400px;
-}
-
-/***** HEADER *****/
+/* ---------- Header & Nav ---------- */
 header {
+    align-items: center;
     background: url('../img/full-background.png');
     background-position: center;
     background-size: cover;
-    height: 800px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    min-height: 900px;
 }
 header h1 {
     color: #bbc085;
     font-family: 'Lora', serif;
-    font-size: 30px;
-    padding: 65px 0 65px 25px;
+    font-size: 1.875em;
+    margin-top: 50px;
+    width: 100%;
 }
 nav {
-    float: right;
-    padding: 75px 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
 }
 nav ul li {
-    display: inline-block;
+    list-style-type: none;
+    padding: 10px 0;
 }
 nav ul li a {
     color: #828282;
-    font-size: 18px;
-    padding-left: 80px;
+    font-size: 1.125em;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -52,105 +75,244 @@ header h2 {
     clear:both;
     color: #9b9b9b;
     font-family: 'Lora', serif;
-    font-size: 72px;
+    font-size: 2.25em;
     line-height: 80px;
-    padding: 20px 0 20px 25px;
-    width: 1000px;;
+    text-align: center;
+    width: 100%;
 }
 header h2 span {
     color: #2b2b2b
 }
 
-/***** ABOUT *****/
-
-#about .full-width {
-    padding: 80px 0;
+/* ---------- About ---------- */
+#about {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
 }
 #about h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
-    padding-left: 50px;
-}
-#about p {
-    color: #7f7f7f;
-    font-size: 21px;
-    line-height:40px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/***** WORK *****/
-
-#work {
-    background-color: #f9ceb7;
+    font-size: 1.875em;
+    margin-top: 50px;
     text-align: center;
 }
-#work .full-width {
-    padding: 115px 0;
-}
-#work img {
-    padding-bottom: 30px;
-}
-#work h3 {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 0 auto;
-    width: 190px;
-}
-#work p {
-    font-family: 'Lora', serif;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 50px;
+.about-para p {
+    color: #7f7f7f;
+    font-size: 1.125em;
+    line-height: 40px;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: justify;
 }
 
-/***** CONTACT *****/
+/* ---------- Work ---------- */
+#work {
+    align-items: center;
+    background-color: #f9ceb7;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+#work .content-wrapper {
+    padding: 40px 0;
+}
+.work-sq {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+.work-img {
+    padding-bottom: 30px;
+    width: 100px;
+}
+.work-sq h3 {
+    font-size: 1.5em;
+    line-height: 32px;
+    margin: 0 auto;
+    text-align: center;
+    width: 190px;
+}
+.work-sq p {
+    font-family: 'Lora', serif;
+    font-size: 1.125em;
+    line-height: 30px;
+    padding: 0 50px;
+    text-align: center;
+    width: 350px;
+}
+
+/* ---------- Contact Footer ---------- */
 #contact {
+    align-items: center;
     background-color: #ebebeb;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    text-align: center;
 }
-#contact .full-width {
-    padding: 110px 0;
-}
-#contact img#contact-img {
+.contact-img {
     border: 12px solid #ffffff;
-    margin-left: 25px;
-}
-#contact h2, #contact #email-header, 
-#contact #social-media-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
+    margin: 25px;
 }
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 44px;
 }
-#contact #email-header {
-    font-size: 32px;
+#email-header {
+    font-size: 1.5em;
     font-weight: 400;
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
-#contact #social-media-header {
-    font-size: 29px;
+#envelope {
+    margin-right: 10px;
+    width: 6%;
+}
+.socials a {
+    color: #c49075;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+#social-media-header {
+    font-size: 1.5em;
     font-weight: bold;
     line-height: 44px;
     margin: 40px 0 0 0;
 }
-#contact a {
-    color: #c49075;
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: none;
-}
-#contact ul {
+.social-icons {
     list-style: none;
 }
-#contact ul li {
+.social-icons li {
     display: inline-block;
 }
-#contact ul img {
+.social-icons img {
+    margin-bottom: 20px;
     padding-right: 48px;
+    width: 40%;
 }
+
+/* -------------------- Tablet Styles -------------------- */
+@media only screen and (min-width: 768px) {
+    /* ---------- General Styles ---------- */
+    .content-wrapper {
+        margin: 0 50px;
+        max-width: 700px;
+    }
+
+    /* ---------- Header & Nav ---------- */
+    header {
+        min-height: 750px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li a {
+        font-size: 1.25em;
+    }
+    header h2 {
+        font-size: 3em;
+    }
+
+    /* ---------- About ---------- */
+    .about-para {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .about-para p {
+        font-size: 1em;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+} /* end tablet styles */
+
+/* -------------------- Desktop Styles -------------------- */
+@media only screen and (min-width: 1200px) {
+    /* ---------- General Styles ---------- */
+    .content-wrapper {
+        max-width: 1000px;
+    }
+
+    /* ---------- Header & Nav ---------- */
+    .header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        width: 100%;
+    }
+    header h1 {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 2.125em;
+        margin: 0;
+        width: 50%;
+    }
+    nav {
+        justify-content: flex-end;
+        width: 50%;
+    }
+    nav ul {
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    nav ul li {
+        padding: 0 30px;
+    }
+    nav ul li a {
+        font-size: 1.375em;
+    }
+    header h2 {
+        font-size: 4.5em;
+        margin-top: 120px;
+    }
+
+    /* ---------- About ---------- */
+    .about-para {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    #about h2 {
+        font-size: 2em;
+    }
+    .about-para p {
+        font-size: 1.125em;
+    }
+
+    /* ---------- Work ---------- */
+    #work .content-wrapper {
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    .work-sq {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 33.3%;
+    }
+    .work-sq p {
+        width: 250px;
+    }
+
+    /* ---------- Contact Footer ---------- */
+    #contact .content-wrapper {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+    .contact-img {
+        width: 40%;
+    }
+} /* end desktop styles */

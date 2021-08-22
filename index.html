@@ -11,13 +11,11 @@
     </head>
 
     <body>
-        <!-- ***** HEADER ***** -->
+        <!-- *** Header & Nav *** -->
         <header>
-            <div class="full-width">
-                <div class="half-width">
+            <div class="content-wrapper">
+                <div class="header">
                     <h1>Jubilee Austen</h1>
-                </div>
-                <div class="half-width">
                     <nav>
                         <ul>
                             <li><a href="#about">About</a></li>
@@ -31,11 +29,11 @@
         </header>
 
         <main>
-            <!-- ***** ABOUT ***** -->
+            <!-- *** About *** -->
             <section id="about">
-                <div class="full-width">
+                <div class="content-wrapper">
                     <h2>A little bit about me.</h2>
-                    <div class="half-width">
+                    <div class="about-para">
                         <p>I've made my home base in Providence, Rhode Island, 
                             with my small growing family. My journey into tech 
                             started with a degree in journalism. As I started 
@@ -43,8 +41,6 @@
                             easily I could get my voice out there. I was hooked 
                             and wanted to learn how to build my own site to fit 
                             my own specific needs.</p>
-                    </div>
-                    <div class="half-width">
                         <p>That curiosity then opened a door that could never be 
                             shut. When I learned how to build my first website, I 
                             realized I found something that gave me the freedom & 
@@ -55,45 +51,51 @@
                     </div>
                 </div>
             </section>
-            <!-- ***** WORK ***** -->
+            <!-- *** Work *** -->
             <section id="work">
-                <div class="full-width">
-                    <div class="third-width">
-                        <img src="img/html-icon.png" alt="HTML icon" />
+                <div class="content-wrapper">
+                    <div class="work-sq">
+                        <figure class="work-img">
+                            <img src="img/html-icon.png" alt="HTML icon" />
+                        </figure>
                         <h3>Hand-Coded HTML</h3>
                         <p>My focus is writing clean, well-formatted, semantic HTML5 
                             by hand to make sure that the content is easy to read, easy 
                             to collaborate, trouble-shoot and accessible.</p>
                     </div>
-                    <div class="third-width">
-                        <img src="img/css-icon.png" alt="CSS icon" />
+                    <div class="work-sq">
+                        <figure class="work-img">
+                            <img src="img/css-icon.png" alt="CSS icon" />
+                        </figure>
                         <h3>Well-Organized CSS</h3>
                         <p>I pride myself on writing CSS that is easy to read and build 
                             on. I focus on keeping my CSS lean and fast to load, and I 
                             make it a habit to stay up to date on current best practices.</p>
                     </div>
-                    <div class="third-width">
-                        <img src="img/pencil-icon.png" alt="Pencil icon" />
+                    <div class="work-sq">
+                        <figure class="work-img">
+                            <img src="img/pencil-icon.png" alt="Pencil icon" />
+                        </figure>
                         <h3>Ease Converting Designs into Code</h3>
                         <p>You can trust me to take a designer's PSD and quickly & accurately 
                             convert it into a webpage that is pixel-perfect match.</p>
                     </div>
                 </div>
             </section>
-            <!-- ***** CONTACT ***** -->
+            <!-- *** Contact Footer *** -->
             <footer id="contact">
-                <div class="full-width">
-                    <div class="half-width">
-                        <img id="contact-img" src="img/contact-image.png" alt="Contact image" />
-                    </div>
-                    <div class="half-width">
+                <div class="content-wrapper">
+                    <figure class="contact-img">
+                        <img src="img/contact-image.png" alt="Contact image" />
+                    </figure>
+                    <aside class="socials">
                         <h2>Like what you see?</h2>
                         <h3 id="email-header">Let's meet for a cup of coffee.</h3>
                         <a href="mailto:hi@jubileeausten.com">
                             <img id="envelope" src="img/envelope.png" alt="Envelope icon" /></a>
                         <a href="mailto:hi@jubileeausten.com">hi[@]jubileeausten.com</a>
                         <h3 id="social-media-header">Or, find me on the interwebs</h3>
-                        <ul>
+                        <ul class="social-icons">
                             <li><a href="https://twitter.com/">
                                 <img src="img/twitter.png" alt="Twitter icon" /></a></li>
                             <li><a href="https://www.tumblr.com/">
@@ -105,9 +107,10 @@
                            <li><a href="https://github.com/">
                                 <img src="img/github.png" alt="Github icon" /></a></li>
                         </ul>
-                    </div>
+                    </aside>
                 </div>
             </footer>
+
         </main>
     </body>
 </html>
